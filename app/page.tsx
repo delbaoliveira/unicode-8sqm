@@ -1,9 +1,9 @@
 export default async function Home() {
-  const data = await fetch("/api/hello", {
-    next: { revalidate: 60 },
-  }).then((res) => res.json())
+  // const data = await fetch("/api/hello", {
+  //   next: { revalidate: 60 },
+  // }).then((res) => res.json())
 
-  console.log(data)
+  // console.log(data)
 
-  return <h1></h1>
+  return <h1>Hi</h1>
 }
