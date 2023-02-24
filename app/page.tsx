@@ -3,5 +3,11 @@ export default async function Home() {
     next: { revalidate: 10 },
   }).then((res) => res.json())
 
-  return <h1>{data.jp}</h1>
+  return (
+    <div>
+      <h1>{data.jp}</h1>
+      <h2>{data.course?.name}</h2>
+      <h2>{data.course?.description}</h2>
+    </div>
+  )
 }
