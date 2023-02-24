@@ -1,7 +1,9 @@
+export const runtime = "edge"
+
 export default async function Home() {
-  const data = await fetch("https://unicode-8sqm.vercel.app/api/hello", {
-    next: { revalidate: 10 },
-  }).then((res) => res.json())
+  const data = await fetch("https://unicode-8sqm.vercel.app/api/hello").then(
+    (res) => res.json(),
+  )
 
   return (
     <div>
